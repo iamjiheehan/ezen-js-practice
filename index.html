@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="./class.js"></script>
-    <script src="./arrowFunction.js"></script>
-    <p id="demo"></p>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            p {
+                margin-left: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script src="./array.js"></script>
+        <script>
+            function Apple() {
+                document.getElementById("demo1").innerHTML = "Apple";
+            }
+            function Tomato() {
+                document.getElementById("demo1").innerHTML = "tomato";
+            }
+            let Fruit = true;
+
+            Fruit ? Apple() : Tomato();
+</script>
+    </body>
 </html>
